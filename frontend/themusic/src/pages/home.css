@@ -1,0 +1,143 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #585154;
+    background-image: linear-gradient(225deg, #585154 0%, #0a0310 50%, #3a5464 100%, #585154 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home {
+    width: 45%; /* Adjust the width as needed */
+    margin: 1rem auto;
+    background-color: transparent !important; /* Ensure the .home container background is transparent */
+}
+
+.home h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 200%;
+    background-color: transparent !important; /* Ensure the h1 background is transparent */
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 500%;
+    font-family: "Proxima Nova";
+    background-color: transparent;
+}
+
+.slick-slide {
+    transition: transform 0.8s ease; /* Smooth transition effect */
+    background-color: transparent;
+}
+
+.slick-slide img {
+    width: 100%; /* Ensure images fill the slider container */
+    height: auto;
+    background-color: transparent;
+}
+
+.slick-list {
+    overflow: hidden; /* Hide overflow to prevent images from showing outside the slider */
+    background-color: transparent;
+}
+
+.slick-slide:not(.slick-center) {
+    opacity: 0.5; /* Reduce opacity for non-center images */
+    transform: scale(0.8); /* Scale down non-center images */
+    background-color: transparent;
+}
+
+.slick-center {
+    transform: scale(1); /* Ensure center image is at full scale */
+    background-color: transparent;
+}
+
+.left-box {
+    width: 20%;
+    height: 340px;
+    background-color: #000; /* Adjust color as needed */
+    position: absolute; /* Position absolutely for independent positioning */
+    left: 2%; /* Adjust left position as needed */
+    bottom: 10px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-box {
+    width: 70%;
+    height: 340px;
+    bottom: 10px;
+    background-color: #000; /* Adjust color as needed */
+    position: absolute; /* Position absolutely for independent positioning */
+    right: 3%; /* Adjust right position as needed */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 6px;
+}
+
+.box-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    
+    font-family: "Proxima Nova";
+    background-color: transparent;
+}
+
+.sub-container {
+    display: flex;
+    align-items: center;
+}
+
+.song-title {
+    margin-right: 20px; /* Space between song title and controls */
+}
+
+.wavesurfer-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; /* Space between controls and waveform */
+    color: white;
+}
+
+.wavesurfer-controls button {
+    font-size: 24px; /* Increase button size */
+    margin-right: 10px; /* Space between buttons */
+    padding: 10px; /* Increase clickable area */
+}
+
+.wavesurfer-controls input[type="range"] {
+    width: 100px; /* Adjust width as needed */
+}
+
+.wavesurfer-container {
+    width: 100%;
+    max-width: 1100px; /* Adjust as needed */
+    height: 40px;
+}
